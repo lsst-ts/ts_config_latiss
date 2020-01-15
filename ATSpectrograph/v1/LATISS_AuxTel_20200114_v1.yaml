@@ -4,7 +4,7 @@ description: LATISS configuration for AuxTel, first light 2020-01-14
 instrument_port:
    - 2
 host:
-   - 139.229.170.XXX
+   - 139.229.170.44
 max_pos:
    - 75
 filters:
