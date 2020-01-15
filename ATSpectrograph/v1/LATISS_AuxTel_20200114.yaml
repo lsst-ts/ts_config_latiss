@@ -1,54 +1,20 @@
-$schema: http://json-schema.org/draft-07/schema#
-$id: https://github.com/lsst-ts/ts_atspec/blob/master/schema/ATSpectrograph.yaml
-# title must end with one or more spaces followed by the schema version, which must begin with "v"
-title: LATISS_AuxTel)20200114 v1
+title: LATISS_AuxTel_20200114 v1
 description: LATISS configuration for AuxTel, first light 2020-01-14
-type: object
-properties:
-  instrument_port:
-    description: What port is the instrument mounted on the telescope?
-    type: number
-    default: 1
-  host:
-    description: IP of the controller
-    type: string
-    default: 139.229.170.XXX
-  port:
-    decription: Port for the controller
-    type: integer
-    default: 9999
-  min_pos:
-    decription: Minimum position for the linear stage (in mm).
-    type: number
-    default: 0
-  max_pos:
-    decription: Maximum position for the linear stage (in mm).
-    type: number
-    default: 75
-  tolerance:
-    decription: Tolerance for positioning the linear stage.
-    type: number
-    default: 0.01
-  filters:
-    decription: Currently installed filter names.
-    type: array
-    uniqueItems: true
-    items:
-      type: string
-    default:
-     - blank_bk7_wg05
-     - KPNO_1111_436nm
-     - KPNO_373A_677nm
-     - KPNO_406_828nm
-  gratings:
-    decription: Currently installed grating names.
-    type: array
-    uniqueItems: true
-    items:
-      type: string
-    default:
-      - empty
-      - ronchi170lpmm
-      - ronchi90lpmm
-      - empty
-additionalProperties: false
+
+instrument_port:
+   - 2
+host:
+   - 139.229.170.XXX
+max_pos:
+   - 75
+filters:
+   - blank_bk7_wg05
+   - KPNO_1111_436nm
+   - KPNO_373A_677nm
+   - KPNO_406_828nm
+gratings:
+   - empty
+   - ronchi170lpmm
+   - ronchi90lpmm
+   - empty
+
