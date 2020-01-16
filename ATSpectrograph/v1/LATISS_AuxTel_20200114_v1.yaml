@@ -7,8 +7,8 @@ filters:
    - KPNO_373A_677nm
    - KPNO_406_828nm
 gratings:
-   - empty
+   - empty_1
    - ronchi170lpmm
    - ronchi90lpmm
-   - empty
+   - empty_2
 
