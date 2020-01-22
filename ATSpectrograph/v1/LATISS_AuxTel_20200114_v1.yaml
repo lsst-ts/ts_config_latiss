@@ -1,6 +1,6 @@
 instrument_port: 2
 host: 139.229.170.44
-max_pos: 75
+max_pos: 67.0
 filters:
    - blank_bk7_wg05
    - KPNO_1111_436nm
