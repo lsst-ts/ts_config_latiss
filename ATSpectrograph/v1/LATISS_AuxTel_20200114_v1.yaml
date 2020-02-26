@@ -1,6 +1,6 @@
 instrument_port: 2
 host: 139.229.170.44
-max_pos: 75
+max_pos: 67
 filters:
    - blank_bk7_wg05
    - KPNO_1111_436nm
@@ -10,5 +10,5 @@ gratings:
    - empty
    - ronchi90lpmm
    - ronchi170lpmm
-   - empty
+   - empty_4
 
