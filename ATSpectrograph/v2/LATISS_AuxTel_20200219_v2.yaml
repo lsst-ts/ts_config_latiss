@@ -2,28 +2,28 @@ instrument_port: 2
 host: 139.229.170.44
 max_pos: 75
 filters:
-   name:
+   filter_name:
       - empty_1
       - quadnotch1
       - BG40
       - RG610
-   central_wavelength:
+   filter_central_wavelength:
       - 700
       - 700
       - 450
       - 840
-   focus_offset:
+   filter_focus_offset:
       - 0.0
       - 4.0
       - 5.0
       - 6.0
 gratings:
-   name:
+   grating_name:
       - empty_1
       - ronchi90lpmm
       - ronchi170lpmm
       - empty_4
-   focus_offset:
+   grating_focus_offset:
       - 0.0
       - 7.0
       - 8.0
