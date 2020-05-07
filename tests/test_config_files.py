@@ -33,3 +33,4 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.check_standard_config_files(sal_name="ATSpectrograph",
                                          module_name="lsst.ts.atspectrograph",
                                          config_package_root=self.config_package_root)
+
