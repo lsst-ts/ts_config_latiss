@@ -1,3 +1,4 @@
 # Labels for recommended settings; a dict of label: config_file
 # there are no configuration files yet; the default suffices for now
-current: LATISS_AuxTel_20200219_v2.yaml
+current: LATISS_AuxTel_20200316_v2.yaml
+
