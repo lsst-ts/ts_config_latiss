@@ -1,9 +1,10 @@
-# Ticket used to create this file: DM-28818
+# Ticket used to create this file: DM-28854
 # Date created: 2021-02-15
 # Description: Grating and filter offset values based on measurements taken on 2021-01-08
 # Grating offsets assume focusing at filter central wavelengths
-# It also includes the inclusion of the new Hologram grating. Focus offsets for the
-# hologram are complete estimates and have not been confirmed.
+# This new file changes sign of x-pointing offsets due to sign error fix in ATCS
+# It also includes the inclusion of the new Hologram grating. Focus offsets are
+# estimates
 # WARNING: grating and filter names must registered with DM to be properly ingested.
 instrument_port: 2
 host: 139.229.170.44
@@ -49,8 +50,8 @@ gratings:
    offset_pointing_grating:
       x:
          - 0.0
-         - 20.0
-         - 20.0
+         - -20.0
+         - -20.0
          - 0.0
       y:
          - 0.0
