@@ -1,0 +1,62 @@
+# Ticket used to create this file: DM-28854
+# Date created: 2021-03-04
+# Description: Previous run did not use updated focus offsets, but did use proper
+# pointing offsets. This config uses BG40, RG610, quadnotch, and grating focus offsets from
+# measurements taken on 2021-01-20.
+# Unsure why no offset is required for quadnotch.
+# Grating offsets assume focusing at filter central wavelengths, but were approximated from
+# a non-wavelength calibrated spectrum.
+# Grating offset measured only for ronchi90lpmm, the offset may differ for the 170lpmm
+# pointing offsets remain the same as 2021-02-15 when the sign was flipped.
+instrument_port: 2
+host: 139.229.170.44
+max_pos: 75
+filters:
+   filter_name:
+      - empty_1
+      - quadnotch1
+      - BG40
+      - RG610
+   central_wavelength_filter:
+      - 700
+      - 700
+      - 450
+      - 840
+   offset_focus_filter:
+      - 0.00
+      - 0.00
+      - -0.0295
+      - -0.0295
+   offset_pointing_filter:
+      x:
+         - 0.0
+         - 0.0
+         - 0.0
+         - 0.0
+      y:
+         - 0.0
+         - 0.0
+         - 0.0
+         - 0.0
+gratings:
+   grating_name:
+      - empty_1
+      - ronchi90lpmm
+      - ronchi170lpmm
+      - holo4_003
+   offset_focus_grating:
+      - 0.0
+      - -0.0527
+      - -0.0527
+      - 0.0
+   offset_pointing_grating:
+      x:
+         - 0.0
+         - -20.0
+         - -20.0
+         - 0.0
+      y:
+         - 0.0
+         - 0.0
+         - 0.0
+         - 0.0
