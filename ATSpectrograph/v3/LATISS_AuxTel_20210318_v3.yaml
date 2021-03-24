@@ -1,11 +1,12 @@
-# Ticket used to create this file: CAP-720
-# Date created: 2021-03-18
+# Ticket used to create this file: DM-29350
+# Date created: 2021-03-23
 # Description: Filter offset values based on measurements taken on 2021-01-08
 # Grating offsets assume focusing at filter central wavelengths
 # This new file includes grating pointing offsets measured on 2021-03-11
 # It also includes grating focus offsets for the ronchi170lpmm and holo4_003
-# measured on 2021-03-11.  The sign of these offsets is suspect, but that's what
-# the measurements say.  The focus offset for ronchi90lpmm is unchanged.
+# measured on 2021-03-11.
+# Sign is now switched from previous file for hologram and ronchi170lpmm.
+# The focus offset for ronchi90lpmm is unchanged.
 # WARNING: grating and filter names must registered with DM to be properly ingested.
 instrument_port: 2
 host: 139.229.170.44
@@ -46,8 +47,8 @@ gratings:
    offset_focus_grating:
       - 0.0
       - -0.026
-      - 0.2164
-      - 0.1064
+      - -0.2164
+      - -0.1064
    offset_pointing_grating:
       x:
          - 0.0
