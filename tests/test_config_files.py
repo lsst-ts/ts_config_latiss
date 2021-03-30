@@ -30,7 +30,8 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.config_package_root = pathlib.Path(__file__).parents[1]
 
     def test_ATSpectrograph(self):
-        self.check_standard_config_files(sal_name="ATSpectrograph",
-                                         module_name="lsst.ts.atspectrograph",
-                                         config_package_root=self.config_package_root)
-
+        self.check_standard_config_files(
+            sal_name="ATSpectrograph",
+            module_name="lsst.ts.atspectrograph",
+            config_package_root=self.config_package_root,
+        )
