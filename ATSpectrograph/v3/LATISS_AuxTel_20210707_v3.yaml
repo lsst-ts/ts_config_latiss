@@ -1,10 +1,9 @@
 # Ticket used to create this file: DM-30950
-# Date created: 2021-06-29
+# Date created: 2021-07-07
 # Description: Filter offset values based on measurements taken on 2021-01-08
 # Grating offsets assume focusing at filter central wavelengths
-# This new file includes grating pointing offsets measured on 2021-03-11
-# Re-did grating focus offsets based on 2021-05-25 datasets
-# The focus offset for ronchi90lpmm is unchanged.
+# This new file includes grating pointing offsets measured on 2021-07-07
+# grating stage at position of 67mm
 # Linear stage ranges modified to avoid limits. This is to prevent timeouts
 # from the API in stage movements.
 # WARNING: grating and filter names must registered with DM to be properly ingested.
@@ -47,9 +46,9 @@ gratings:
       - holo4_003
    offset_focus_grating:
       - 0.0
-      - -0.006
-      - 0.004
-      - -0.013
+      - 0.0165
+      - -0.0362
+      - 0.0165
    offset_pointing_grating:
       x:
          - 0.0

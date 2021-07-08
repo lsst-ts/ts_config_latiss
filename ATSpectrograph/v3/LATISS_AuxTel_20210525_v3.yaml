@@ -6,6 +6,8 @@
 # Re-did grating focus offsets based on 2021-05-25 datasets
 # The focus offset for ronchi90lpmm is unchanged.
 # WARNING: grating and filter names must registered with DM to be properly ingested.
+# NOTE (2021-07-07) - these offsets were determined with the linear stage at the home
+# position (0mm) by accident, not at the extreme (67mm)
 instrument_port: 2
 host: 139.229.170.44
 max_pos: 75
