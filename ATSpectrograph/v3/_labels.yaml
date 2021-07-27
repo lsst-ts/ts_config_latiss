@@ -1,5 +1,6 @@
 # Labels for recommended settings; a dict of label: config_file
-current: LATISS_AuxTel_20210525_v3.yaml
+current: LATISS_AuxTel_20210707_v3.yaml
+run_20210525: LATISS_AuxTel_20210525_v3.yaml
 run_20210318: LATISS_AuxTel_20210318_v3.yaml
 run_20210304: LATISS_AuxTel_20210304_v3.yaml
 run_20210215: LATISS_AuxTel_20210215_v3.yaml
