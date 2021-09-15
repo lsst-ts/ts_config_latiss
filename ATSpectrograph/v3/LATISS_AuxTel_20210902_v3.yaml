@@ -1,22 +1,17 @@
-# Ticket used to create this file: DM-29217
-# Date created: 2021-05-25
-# Description: Filter offset values based on measurements taken on 2021-01-08
-# Grating offsets assume focusing at filter central wavelengths
-# This new file includes grating pointing offsets measured on 2021-03-11
-# Re-did grating focus offsets based on 2021-05-25 datasets
-# The focus offset for ronchi90lpmm is unchanged.
+# Ticket used to create this file: DM-31623
+# Date created: 2021-09-02
+# Description: Installed new filter, focus offset not yet calculated, leaving the previous one for now
 # WARNING: grating and filter names must registered with DM to be properly ingested.
-# NOTE (2021-07-07) - these offsets were determined with the linear stage at the home
-# position (0mm) by accident, not at the extreme (67mm)
 instrument_port: 2
 host: 139.229.170.44
-max_pos: 75
+max_pos: 67
+min_pos: 1
 filters:
    filter_name:
       - empty_1
       - quadnotch1
       - BG40
-      - RG610
+      - FELH0600
    central_wavelength_filter:
       - 700
       - 700
@@ -46,9 +41,9 @@ gratings:
       - holo4_003
    offset_focus_grating:
       - 0.0
-      - -0.006
-      - 0.004
-      - -0.013
+      - 0.0165
+      - -0.0362
+      - 0.0165
    offset_pointing_grating:
       x:
          - 0.0
