@@ -1,7 +1,8 @@
 # Ticket used to create this file: DM-33575
 # Date created: 2022-02-04
-# Description: Installed two new filters, focus offsets are TBR for the SDSSi and SDSSi filters.
-# SDSSg calculated but in very poor seeing.
+# Description: Installed two new filters, focus offsets were determined and found to be within ~2um of original estimate.
+#              Leaving the values unchanged for the SDSSi and SDSSi filters, and same as the SDSSg.
+#              The estimate for the SDSSg was remeasured and found to be consistent.
 # changed host to use dns name
 # WARNING: grating and filter names must registered with DM to be properly ingested.
 instrument_port: 2
