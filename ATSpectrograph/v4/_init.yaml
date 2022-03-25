@@ -1,0 +1,75 @@
+# Ticket used to create this file: DM-33575
+# Date created: 2022-02-04
+# Description: Installed two new filters, focus offsets were determined and found to be within ~2um of original estimate.
+#              Leaving the values unchanged for the SDSSi and SDSSi filters, and same as the SDSSg.
+#              The estimate for the SDSSg was remeasured and found to be consistent.
+# changed host to use dns name
+# WARNING: grating and filter names must registered with DM to be properly ingested.
+instrument_port: 2
+host: auxtel-latiss-crio.cp.lsst.org
+port: 9999
+connection_timeout: 60.0
+response_timeout: 30.0
+move_timeout: 60.0
+tolerance: 0.01
+max_pos: 67
+min_pos: 1
+filters:
+   band:
+      - EMPTY
+      - g
+      - i
+      - r
+   filter_name:
+      - empty_1
+      - SDSSg
+      - SDSSi
+      - SDSSr
+   central_wavelength_filter:
+      - 700
+      - 477
+      - 748
+      - 617
+   offset_focus_filter:
+      - 0.00
+      - -0.018
+      - -0.018
+      - -0.018
+   offset_pointing_filter:
+      x:
+         - 0.0
+         - 0.0
+         - 0.0
+         - 0.0
+      y:
+         - 0.0
+         - 0.0
+         - 0.0
+         - 0.0
+gratings:
+   band:
+      - EMPTY
+      - R90
+      - R170
+      - H4-003
+   grating_name:
+      - empty_1
+      - ronchi90lpmm
+      - ronchi170lpmm
+      - holo4_003
+   offset_focus_grating:
+      - 0.0
+      - 0.0165
+      - -0.0362
+      - 0.0165
+   offset_pointing_grating:
+      x:
+         - 0.0
+         - -17.1
+         - -16.5
+         - -0.6
+      y:
+         - 0.0
+         - 1.3
+         - 1.3
+         - 1.1
