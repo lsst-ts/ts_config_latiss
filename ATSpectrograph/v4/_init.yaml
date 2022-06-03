@@ -1,9 +1,8 @@
-# Ticket used to create this file: DM-33575
-# Date created: 2022-02-04
-# Description: Installed two new filters, focus offsets were determined and found to be within ~2um of original estimate.
-#              Leaving the values unchanged for the SDSSi and SDSSi filters, and same as the SDSSg.
-#              The estimate for the SDSSg was remeasured and found to be consistent.
-# changed host to use dns name
+# Ticket used to create this file: DM-35030
+# Date created: 2022-06-03
+# Description: Replaced SDSSi and SDSSr with BG40 and FELH0600 via SUMMIT-6514
+#  Focus values were taken from the previous config file where 
+#  it was used (LATISS_AuxTel_20210929_v3.yaml)
 # WARNING: grating and filter names must registered with DM to be properly ingested.
 instrument_port: 2
 host: auxtel-latiss-crio.cp.lsst.org
@@ -18,23 +17,23 @@ filters:
    band:
       - EMPTY
       - g
-      - i
+      - g
       - r
    filter_name:
       - empty_1
       - SDSSg
-      - SDSSi
-      - SDSSr
+      - BG40
+      - FELH0600
    central_wavelength_filter:
       - 700
       - 477
-      - 748
-      - 617
+      - 450
+      - 840
    offset_focus_filter:
       - 0.00
       - -0.018
-      - -0.018
-      - -0.018
+      - -0.019
+      - -0.016
    offset_pointing_filter:
       x:
          - 0.0
