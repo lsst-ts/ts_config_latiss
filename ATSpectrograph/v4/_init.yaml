@@ -1,6 +1,6 @@
-# Ticket used to create this file: DM-35030
+# Ticket used to create this file: DM-35288
 # Date created: 2022-06-03
-# Description: Replaced SDSSi and SDSSr with BG40 and FELH0600 via SUMMIT-6514
+# Description: Replaced SDSSg with SDSSr via SUMMIT-6544
 #  Focus values were taken from the previous config file where 
 #  it was used (LATISS_AuxTel_20210929_v3.yaml)
 # WARNING: grating and filter names must registered with DM to be properly ingested.
@@ -16,17 +16,17 @@ min_pos: 1
 filters:
    band:
       - EMPTY
-      - g
+      - r
       - g
       - r
    filter_name:
       - empty_1
-      - SDSSg
+      - SDSSr
       - BG40
       - FELH0600
    central_wavelength_filter:
       - 700
-      - 477
+      - 617
       - 450
       - 840
    offset_focus_filter:
