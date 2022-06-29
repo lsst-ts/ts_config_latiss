@@ -1,8 +1,7 @@
 # Ticket used to create this file: DM-35288
-# Date created: 2022-06-03
+# Date created: 2022-06-28
 # Description: Replaced SDSSg with SDSSr via SUMMIT-6544
-#  Focus values were taken from the previous config file where 
-#  it was used (LATISS_AuxTel_20210929_v3.yaml)
+#  Hologram focus value has been updated based on data taken 2022-06-28.
 # WARNING: grating and filter names must registered with DM to be properly ingested.
 instrument_port: 2
 host: auxtel-latiss-crio.cp.lsst.org
@@ -60,7 +59,7 @@ gratings:
       - 0.0
       - 0.0165
       - -0.0362
-      - 0.0165
+      - -0.0126
    offset_pointing_grating:
       x:
          - 0.0
