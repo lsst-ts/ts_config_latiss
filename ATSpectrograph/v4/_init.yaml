@@ -2,6 +2,7 @@
 # Date created: 2022-06-28
 # Description: Replaced SDSSg with SDSSr via SUMMIT-6544
 #  Hologram focus value has been updated based on data taken 2022-06-28.
+#  Hologram focus was confirmed on 2022-06-28, and Ronchi170lpmm was also updated
 # WARNING: grating and filter names must registered with DM to be properly ingested.
 instrument_port: 2
 host: auxtel-latiss-crio.cp.lsst.org
@@ -58,7 +59,7 @@ gratings:
    offset_focus_grating:
       - 0.0
       - 0.0165
-      - -0.0362
+      - 0.0242
       - -0.0126
    offset_pointing_grating:
       x:
