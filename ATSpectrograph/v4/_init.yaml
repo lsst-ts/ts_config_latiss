@@ -1,8 +1,8 @@
-# Ticket used to create this file: DM-35030
-# Date created: 2022-06-03
-# Description: Replaced SDSSi and SDSSr with BG40 and FELH0600 via SUMMIT-6514
-#  Focus values were taken from the previous config file where 
-#  it was used (LATISS_AuxTel_20210929_v3.yaml)
+# Ticket used to create this file: DM-35288
+# Date created: 2022-06-28
+# Description: Replaced SDSSg with SDSSr via SUMMIT-6544
+#  Hologram focus value has been updated based on data taken 2022-06-28.
+#  Hologram focus was confirmed on 2022-06-28, and Ronchi170lpmm was also updated
 # WARNING: grating and filter names must registered with DM to be properly ingested.
 instrument_port: 2
 host: auxtel-latiss-crio.cp.lsst.org
@@ -16,17 +16,17 @@ min_pos: 1
 filters:
    band:
       - EMPTY
-      - g
+      - r
       - g
       - r
    filter_name:
       - empty_1
-      - SDSSg
+      - SDSSr
       - BG40
       - FELH0600
    central_wavelength_filter:
       - 700
-      - 477
+      - 617
       - 450
       - 840
    offset_focus_filter:
@@ -59,8 +59,8 @@ gratings:
    offset_focus_grating:
       - 0.0
       - 0.0165
-      - -0.0362
-      - 0.0165
+      - 0.0242
+      - -0.0126
    offset_pointing_grating:
       x:
          - 0.0
