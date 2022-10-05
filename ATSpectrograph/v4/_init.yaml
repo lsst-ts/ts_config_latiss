@@ -1,8 +1,7 @@
-# Ticket used to create this file: DM-35288
-# Date created: 2022-06-28
-# Description: Replaced SDSSg with SDSSr via SUMMIT-6544
-#  Hologram focus value has been updated based on data taken 2022-06-28.
-#  Hologram focus was confirmed on 2022-06-28, and Ronchi170lpmm was also updated
+# Ticket used to create this file: DM-36455
+# Date created: 2022-10-05
+# Description: Replaced filter wheel and installed new SDSS gri 65mm filters as per SUMMIT-6804
+# Focus values remain unchanged, and will be remeasured on-sky.
 # WARNING: grating and filter names must registered with DM to be properly ingested.
 instrument_port: 2
 host: auxtel-latiss-crio.cp.lsst.org
@@ -16,19 +15,19 @@ min_pos: 1
 filters:
    band:
       - EMPTY
-      - r
       - g
       - r
+      - i
    filter_name:
       - empty_1
-      - SDSSr
-      - BG40
-      - FELH0600
+      - SDSSg_65mm
+      - SDSSr_65mm
+      - SDSSi_65mm
    central_wavelength_filter:
       - 700
-      - 617
-      - 450
-      - 840
+      - 477
+      - 623
+      - 763
    offset_focus_filter:
       - 0.00
       - -0.018
