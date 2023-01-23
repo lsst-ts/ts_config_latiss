@@ -1,7 +1,7 @@
-# Ticket used to create this file: DM-36455
-# Date created: 2022-10-11
-# Description: Replaced filter wheel and installed new SDSS gri 65mm filters as per SUMMIT-6804
-# Focus values measured on-sky in mediocre seeing conditions (~1 arcsec)
+# Ticket used to create this file: DM-37556
+# Date created: 2023-01-17
+# Description: Installed BG40 and OG550 filters in place of SDSSg and SDSSi
+# Focus values determined on 2023-01-17
 # WARNING: grating and filter names must registered with DM to be properly ingested.
 instrument_port: 2
 host: auxtel-latiss-crio.cp.lsst.org
@@ -20,19 +20,19 @@ filters:
       - i
    filter_name:
       - empty_1
-      - SDSSg_65mm
+      - BG40_65mm_1
       - SDSSr_65mm
-      - SDSSi_65mm
+      - OG550_65mm_1
    central_wavelength_filter:
       - 700
-      - 477
+      - 450
       - 623
-      - 763
+      - 840
    offset_focus_filter:
       - 0.00
-      - -0.0377
+      - -0.0330
       - -0.0379
-      - -0.0259
+      - -0.0342
    offset_pointing_filter:
       x:
          - 0.0
