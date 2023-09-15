@@ -33,7 +33,7 @@ filters:
       - 0.00
       - 0.00
       - -0.0379
-      - 0.00
+      - -0.06
    offset_pointing_filter:
       x:
          - 0.0
