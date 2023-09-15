@@ -16,22 +16,22 @@ min_pos: 1
 filters:
    band:
       - EMPTY
-      - white
+      - g
       - r
       - white
    filter_name:
       - empty_1
-      - collimator
+      - SDSSg_65mm
       - SDSSr_65mm
       - cyl_lens
    central_wavelength_filter:
       - 700
-      - 700
+      - 477
       - 623
       - 700
    offset_focus_filter:
       - 0.00
-      - 0.00
+      - -0.0337
       - -0.0379
       - -0.06
    offset_pointing_filter:
@@ -54,21 +54,21 @@ gratings:
    grating_name:
       - empty_1
       - blue300lpmm_qn1
-      - holo4_001
+      - pinhole_1_1000
       - holo4_003
    offset_focus_grating:
       - 0.0
       - 0.030
-      - -0.0126
+      - 0.0
       - -0.0126
    offset_pointing_grating:
       x:
          - 0.0
          - 0.0
-         - -0.6
+         - 0.0
          - -0.6
       y:
          - 0.0
          - 0.0
-         - 1.1
+         - 0.0
          - 1.1
