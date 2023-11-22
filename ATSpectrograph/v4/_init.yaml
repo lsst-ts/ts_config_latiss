@@ -7,7 +7,7 @@ instrument_port: 2
 host: auxtel-latiss-crio.cp.lsst.org
 port: 9999
 connection_timeout: 60.0
-response_timeout: 30.0
+response_timeout: 60.0
 move_timeout: 60.0
 tolerance: 0.01
 max_pos: 67
