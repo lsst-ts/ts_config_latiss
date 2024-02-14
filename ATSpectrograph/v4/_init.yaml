@@ -1,7 +1,8 @@
-# Ticket used to create this file: SITCOM-1112
-# Date Updated: 2023-11-21
-# Description: Replaced cyl_lens and SDSSi filters for SDSSz and SDSSy. 
-# Focus and pointing offset values for the new filters are not yet measured.
+# Ticket used to create this file: SITCOM-1091 
+# Date Updated: 2024-02-14
+# Description: Replaced SDSSy filter from the gratting wheel with the pinhole_1_1000 mask.
+# Physical replacement was done under SUMMIT-8521.
+#
 # WARNING: grating and filter names must registered with DM to be properly ingested.
 instrument_port: 2
 host: auxtel-latiss-crio.cp.lsst.org
@@ -48,17 +49,17 @@ gratings:
    band:
       - EMPTY
       - R300-QN1
-      - y
+      - PH_1_1000
       - H4-003
    grating_name:
       - empty_1
       - blue300lpmm_qn1
-      - SDSSy_65mm
+      - pinhole_1_1000 
       - holo4_003
    offset_focus_grating:
       - 0.0
       - 0.030
-      - -0.03
+      - 0.0 
       - -0.0126
    offset_pointing_grating:
       x:
