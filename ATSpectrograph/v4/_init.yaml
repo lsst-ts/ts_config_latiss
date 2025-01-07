@@ -20,19 +20,19 @@ filters:
       - z
    filter_name:
       - empty_1
-      - SDSSg_65mm
+      - BG40_65mm_1
       - SDSSr_65mm
-      - SDSSz_65mm
+      - OG550_65mm_1
    central_wavelength_filter:
       - 700
-      - 477
+      - 450
       - 623
-      - 877
+      - 840
    offset_focus_filter:
       - 0.00
-      - -0.0337
+      - -0.0330
       - -0.0379
-      - -0.03
+      - -0.0342
    offset_pointing_filter:
       x:
          - 0.0
