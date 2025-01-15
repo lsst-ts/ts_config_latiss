@@ -1,0 +1,69 @@
+# Configuration used to run the anytime survey for the scheduler.
+instrument_port: 2
+host: auxtel-latiss-crio.cp.lsst.org
+port: 9999
+connection_timeout: 60.0
+response_timeout: 60.0
+move_timeout: 60.0
+tolerance: 0.01
+max_pos: 67
+min_pos: 1
+filters:
+   band:
+      - EMPTY
+      - g
+      - r
+      - z
+   filter_name:
+      - empty_1
+      - SDSSg_65mm
+      - SDSSr_65mm
+      - SDSSz_65mm
+   central_wavelength_filter:
+      - 700
+      - 477
+      - 623
+      - 877
+   offset_focus_filter:
+      - 0.00
+      - -0.0337
+      - -0.0379
+      - -0.03
+   offset_pointing_filter:
+      x:
+         - 0.0
+         - 0.0
+         - 0.0
+         - 0.0
+      y:
+         - 0.0
+         - 0.0
+         - 0.0
+         - 0.0
+gratings:
+   band:
+      - EMPTY
+      - R300-QN1
+      - y
+      - H4-003
+   grating_name:
+      - empty_1
+      - blue300lpmm_qn1
+      - SDSSy_65mm
+      - holo4_003
+   offset_focus_grating:
+      - 0.0
+      - 0.030
+      - -0.03
+      - -0.0126
+   offset_pointing_grating:
+      x:
+         - 0.0
+         - 0.0
+         - 0.0
+         - -0.6
+      y:
+         - 0.0
+         - 0.0
+         - 0.0
+         - 1.1
