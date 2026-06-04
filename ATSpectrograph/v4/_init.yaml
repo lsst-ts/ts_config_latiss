@@ -16,22 +16,22 @@ filters:
    band:
       - EMPTY
       - white
-      - notch9
+      - r
       - z
    filter_name:
       - empty_1
       - prism
-      - nonanotch1
+      - SDSSr_65mm
       - OG550_65mm_1
    central_wavelength_filter:
       - 700
       - 700
-      - 700
+      - 623
       - 840
    offset_focus_filter:
       - 0.00
       - 0.00
-      - 0.00
+      - -0.0379
       - -0.0342
    offset_pointing_filter:
       x:
