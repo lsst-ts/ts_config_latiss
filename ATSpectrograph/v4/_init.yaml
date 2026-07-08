@@ -31,7 +31,7 @@ filters:
    offset_focus_filter:
       - 0.00
       - 0.02
-      - -0.04
+      - -0.0274
       - -0.0342
    offset_pointing_filter:
       x:
@@ -57,7 +57,7 @@ gratings:
       - holo4_003
    offset_focus_grating:
       - 0.0
-      - 0.06
+      - 0.0374
       - -0.0379
       - -0.0126
    offset_pointing_grating:
