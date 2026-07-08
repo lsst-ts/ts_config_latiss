@@ -48,17 +48,17 @@ gratings:
    band:
       - EMPTY
       - R300
-      - y
+      - r
       - H4-003
    grating_name:
       - empty_1
       - 300lpmm
-      - SDSSy_65mm
+      - SDSSr_65mm
       - holo4_003
    offset_focus_grating:
       - 0.0
       - 0.06
-      - -0.03
+      - -0.0379
       - -0.0126
    offset_pointing_grating:
       x:
