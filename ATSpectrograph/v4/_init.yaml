@@ -15,23 +15,23 @@ min_pos: 1
 filters:
    band:
       - EMPTY
-      - g
-      - r
+      - white
+      - notch9
       - z
    filter_name:
       - empty_1
-      - BG40_65mm_1
-      - SDSSr_65mm
+      - prism
+      - nonanotch1
       - OG550_65mm_1
    central_wavelength_filter:
       - 700
-      - 450
-      - 623
+      - 700
+      - 700
       - 840
    offset_focus_filter:
       - 0.00
-      - -0.0330
-      - -0.0379
+      - 0.02
+      - -0.0274
       - -0.0342
    offset_pointing_filter:
       x:
@@ -47,18 +47,18 @@ filters:
 gratings:
    band:
       - EMPTY
-      - R300-QN1
-      - y
+      - R300
+      - r
       - H4-003
    grating_name:
       - empty_1
-      - blue300lpmm_qn1
-      - SDSSy_65mm
+      - 300lpmm
+      - SDSSr_65mm
       - holo4_003
    offset_focus_grating:
       - 0.0
-      - 0.030
-      - -0.03
+      - 0.0374
+      - -0.0379
       - -0.0126
    offset_pointing_grating:
       x:
